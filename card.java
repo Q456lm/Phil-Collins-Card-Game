@@ -5,6 +5,10 @@ public class card{
         cardType = cardNum;//Determines the type of card.
     }
 
+    public int getCardType(){
+        return cardType;
+    }
+
     public String toString(){
         if (cardType == 1){
             return "In The Air Tonight - Draw 2 song cards and start a divorce";
@@ -36,7 +40,10 @@ public class card{
             return "That’s All - Deposit 2 song cards and draw 2 new song cards and start a divorce";
         }else if (cardType == 15){
             return "I Can’t Dance - Pick another player to deposit 3 song cards";
-        }else{
+        }else if (cardType == 16){
+            return "Invisible Touch - Stops Divorces";
+        }
+        else{
             return "Nothing - It Signify That There is a Logic Error in my code";
         }
     }
