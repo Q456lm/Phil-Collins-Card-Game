@@ -4,12 +4,34 @@ public class game{
 
     public static ArrayList<Integer> cardNums = new ArrayList<Integer>(Arrays.asList(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 9, 9, 9, 9, 9, 9, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 15, 15, 15, 15, 15, 15, 15, 15, 15, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 9, 9, 9, 9, 9, 9, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 15, 15, 15, 15, 15, 15, 15, 15, 15, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 9, 9, 9, 9, 9, 9, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 15, 15, 15, 15, 15, 15, 15, 15, 15, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 9, 9, 9, 9, 9, 9, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 15, 15, 15, 15, 15, 15, 15, 15, 15, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 9, 9, 9, 9, 9, 9, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 15, 15, 15, 15, 15, 15, 15, 15, 15, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 9, 9, 9, 9, 9, 9, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 15, 15, 15, 15, 15, 15, 15, 15, 15, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16));
     public static ArrayList<ArrayList<card>> allHands = new ArrayList<ArrayList<card>>();
+    public static ArrayList<ArrayList<album>> albumNums = new ArrayList<ArrayList<album>>();
     public static ArrayList<card> discardPile = new ArrayList<>();
+
+    public static ArrayList<Integer> albumsReleased = new ArrayList<>();
+    public static ArrayList<Integer> discardedCards = new ArrayList<>();
+    public static ArrayList<Integer> gainedCards = new ArrayList<>();
+    public static ArrayList<Integer> turnsDivorced = new ArrayList<>();
+    public static ArrayList<Integer> turnsNotUsingCards = new ArrayList<>();
+    public static ArrayList<Integer> turnsNotDrawingCards = new ArrayList<>();
+    public static ArrayList<Integer> turnsNotEffected = new ArrayList<>();
+    public static ArrayList<Boolean> waitProtection = new ArrayList<>();
+    public static ArrayList<Integer> turnsBilly = new ArrayList<>();
+    public static ArrayList<Integer> cardsBilly = new ArrayList<>();
+
 
     public static int random(int num1,int num2){ //Generates a random number between two values
         int num3=(num2-num1)+1;
         int ran_num = (int) (Math.random()*num3)+num1;
         return ran_num;
+    }
+
+    public static void albumSetUp(int playerNum){
+        for (int i = 0; i < playerNum; i++){
+            albumNums.add(new ArrayList<>());
+            for (int j = 1; j <= 8; j++){
+                albumNums.get(i).add(new album(j));
+            }
+        }
     }
 
     public static int intInput(String msg){ //Gets Integer User Input
@@ -35,6 +57,16 @@ public class game{
                 int randomNum = random(0, cardNums.size()-1);
                 allHands.get(i).add(new card(cardNums.get(randomNum)));
                 cardNums.remove(randomNum);
+                albumsReleased.add(0);
+                discardedCards.add(0);
+                gainedCards.add(0);
+                turnsDivorced.add(0);
+                turnsNotUsingCards.add(0);
+                turnsNotDrawingCards.add(0);
+                turnsNotEffected.add(0);
+                waitProtection.add(false);
+                turnsBilly.add(0);
+                cardsBilly.add(0);
             }
         }
     }
@@ -83,13 +115,20 @@ public class game{
 
     public static void makeCards(card cardType, int playerNum){
         int cardNum = cardType.getCardType();
+
         if (cardNum == 1){
             System.out.println("Drew 2 Cards");
             drawCards(2, playerNum);
+            if (turnsDivorced.get(playerNum) == 0){
+                turnsDivorced.set(playerNum, 1);
+            }
         }else if (cardNum == 2){
 
         }else if (cardNum == 3){
-            startCards(0);
+            for (int i = 0; i < allHands.size(); i++){
+                discardedCards.set(i, discardedCards.get(i)+allHands.get(i).size());
+                startCards(0);
+            }
         }else if (cardNum == 4){
             for (int i = 1; i <= allHands.size(); i++){
                 if (i != playerNum){
@@ -108,7 +147,7 @@ public class game{
             depositPlayer = depositPlayer - 1;
             discardCards(3, depositPlayer);
         }else if (cardNum == 7){
-            //Implement using a shield list where each plyer represents an element in the list
+            //Implement using a shield list where each player represents an element in the list
         }else if (cardNum == 8){
             drawCards(3, playerNum);
         }else if (cardNum == 9){
@@ -179,6 +218,7 @@ public class game{
             }
         }
         int playerNums = intInput("How many players? ");
+        albumSetUp(playerNums);
         startCards(playerNums);
         for (int i = 1; i <= allHands.size(); i++){
             card move = useCards(i,"Which card: ");
