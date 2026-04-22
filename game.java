@@ -100,6 +100,70 @@ public class game{
             if (allHands.get(playerNum).size() <= 3){
                 drawCards(6, playerNum);
             }
+        }else if (cardNum == 6){
+            int depositPlayer = intInput("Which plyer to deppsit: ");
+            if (depositPlayer > allHands.size()){
+                depositPlayer = 1;
+            }
+            depositPlayer = depositPlayer - 1;
+            discardCards(3, depositPlayer);
+        }else if (cardNum == 7){
+            //Implement using a shield list where each plyer represents an element in the list
+        }else if (cardNum == 8){
+            drawCards(3, playerNum);
+        }else if (cardNum == 9){
+            //Implement using amount of cards list similar to Against All Odds
+        }else if (cardNum == 10){
+            //Implement with album cards
+            int depositPlayer = intInput("Which player to steal: ");
+            if (depositPlayer > allHands.size()){
+                depositPlayer = 1;
+            }
+            depositPlayer = depositPlayer - 1;
+            stealCard(1, depositPlayer, playerNum);
+        }else if (cardNum == 11){
+            int depositPlayer = intInput("Which player to look: ");
+            if (depositPlayer > allHands.size()){
+                depositPlayer = 1;
+            }
+            depositPlayer = depositPlayer - 1;
+            displayCards(depositPlayer);
+        }else if (cardNum == 12){
+            int depositPlayer1;
+            int depositPlayer2;
+            if (allHands.size() >= 3){
+                depositPlayer1 = intInput("Which player to steal: ");
+                if (depositPlayer1 > allHands.size()){
+                    depositPlayer1 = 1;
+                }
+                depositPlayer1 = depositPlayer1 - 1;
+                depositPlayer2 = intInput("Which player to steal: ");
+                if (depositPlayer2 > allHands.size()){
+                    depositPlayer2 = 1;
+                }
+                depositPlayer2 = depositPlayer2 - 1;
+                stealCard(1, depositPlayer1, playerNum);
+                stealCard(1, depositPlayer2, playerNum);
+            }else if (allHands.size() == 2){
+                int depositPlayer = intInput("Which player to steal: ");
+                if (depositPlayer > allHands.size()){
+                    depositPlayer = 1;
+                }
+                depositPlayer = depositPlayer - 1;
+                stealCard(2, depositPlayer, playerNum);
+            }
+        }else if (cardNum == 13){
+            //Implement using a return statement l0iterally just used for this card
+        }else if (cardNum == 14){
+            discardCards(2, playerNum);
+            drawCards(2, playerNum);
+        }else if (cardNum == 15){
+            int depositPlayer = intInput("Which plyer to deppsit: ");
+            if (depositPlayer > allHands.size()){
+                depositPlayer = 1;
+            }
+            depositPlayer = depositPlayer - 1;
+            discardCards(3, depositPlayer);
         }
     }
 
