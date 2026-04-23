@@ -4,7 +4,7 @@ Each player has 8 albums they must released. Once all of a players albums are re
 <br></br>
 Heres the twist, as you release albums you lose empathy, and having less empathy means you can have less cards in your hands. Your empathy starts at 22 but will go down quickly.
 <br></br>
-To Play run game.java
+To Play clone the repository in either VS Code or intelliJ by copying the link into the spot to clone. Make sure java installed. Run by either clicking the run button on game.java or entering in the terminal "java game.java"
 <br></br>
 The Albums:
 <br></br>
