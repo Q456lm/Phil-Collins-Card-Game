@@ -4,6 +4,8 @@ Each player has 8 albums they must released. Once all of a players albums are re
 <br></br>
 Heres the twist, as you release albums you lose empathy, and having less empathy means you can have less cards in your hands. Your empathy starts at 22 but will go down quickly.
 <br></br>
+To Play run game.java
+<br></br>
 The Albums:
 <br></br>
 1 - Face Value - Use a divorce triggering card and wait two turns. //Fully Implemented
