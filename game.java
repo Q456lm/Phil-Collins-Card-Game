@@ -189,19 +189,20 @@ public class game {
             int albumRelease = intInput("Which album to release (number): ");
             if (albumRelease < albumNums.get(playerNum).size()){
                 albumNums.get(playerNum).remove(albumRelease);
+                empathy.set(playerNum, empathy.get(playerNum) / 1.3);
             }
 
         } else if (cardNum == 3) {
             turnsNotUsingCards.set(playerNum, 0);
             for (int i = 0; i < allHands.size(); i++) {
                 discardedCards.set(i, discardedCards.get(i) + allHands.get(i).size());
-
             }
 
             startCards(0);
             for (int i = 0; i < allHands.size(); i++) {
                 discardedCards.set(i, gainedCards.get(i) + allHands.get(i).size());
             }
+
 
         } else if (cardNum == 4) {
             turnsNotUsingCards.set(playerNum, 0);
